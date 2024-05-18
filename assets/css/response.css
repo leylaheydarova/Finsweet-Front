@@ -1,0 +1,76 @@
+@media ( min-width: 1400px ){
+    .container{
+        max-width: 1320px;
+    }
+
+}
+
+@media ( max-width: 1200px ){
+    .container{
+        max-width: 1100px;
+    }
+}
+
+@media ( max-width: 992px ){
+    .container{
+        max-width: 800px;
+    }
+    #header a{
+        font-size: 12px;
+    }
+    .hero-box{
+        flex-direction: column;
+    }
+    .hero-left{
+        max-width: 100%
+    }
+    .hero-right{
+        max-width: 100%;
+    }
+    .card-links{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .card-txt{
+        max-width: 100%;
+    }
+}
+
+@media ( max-width:780px ){
+    .container{
+        max-width: 540px;
+    }
+
+    .weWork-box{
+        flex-direction: column;
+    }
+    .work-grid-card h1 {
+        font-size: 20px;
+    }
+    .work-grid-card p{
+        font-size: 12px;
+    }
+}
+
+@media ( max-width: 576px ){
+    .container{
+        max-width: 98%;
+    }
+
+    #header-menu{
+        display: none;
+    }
+
+    .header-logo a{
+        font-size: 30px;
+    }
+
+    .weWork-left{
+        justify-content: center;
+    }
+
+    .weWork-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr)
+    }
+}

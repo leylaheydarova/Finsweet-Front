@@ -1,0 +1,295 @@
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* Header */
+#header{
+background-color: rgba(28, 30, 83, 1);
+}
+
+.header-box{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header-logo a{
+    font-weight: 700;
+    color: white
+}
+
+.header-right{
+    max-width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-menu-list{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0 30px;
+}
+
+.header-menu-item a{
+    color: rgba(187, 187, 203, 1);
+}
+
+.header-menu-item a:hover{
+    text-decoration: underline;
+}
+
+.header-menu-item a:focus{
+    color: white;
+}
+
+.contact-btn{
+    padding: 10px 30px;
+    border: 2px solid rgba(244, 246, 252, 0.2);
+    border-radius: 41px;
+    background-color: transparent;
+}
+
+.contact-btn a{
+    color: white;
+}
+
+.contact-btn:hover{
+    background-color: rgba(244, 246, 252, 0.2);
+    border-color: transparent;
+}
+/* HEADER END */
+
+/* hero */
+#hero{
+    background-color: rgba(28, 30, 83, 1);
+}
+
+.hero-box{
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+}
+
+/* hero left */
+
+
+.card{
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-txt{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    max-width: 80%;
+}
+
+.card-txt h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.card-txt p{
+    padding: 15px 0;
+    opacity: 70%;
+}
+
+.card-links{
+    display: flex;
+    justify-content:flex-start ;
+    gap: 10px;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.card-links a{
+    font-weight: 600;
+}
+
+.card-btn a{
+    padding: 20px 40px;
+    border: 1px solid transparent;
+    background-color: rgba(252, 217, 128, 1);
+    color: rgba(27, 28, 43, 1);
+    font-size: 18px;
+    border-radius: 41px;
+} 
+
+.card-btn a:hover{
+    border: 1px solid rgba(252, 217, 128, 1);
+    background-color: rgba(252, 217, 128, 0.4);
+    color: rgba(252, 217, 128, 1);;
+}
+
+.card-link{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.card-link a{
+    color: white;
+}
+
+.card-icon{
+    color: white;
+    transform: translateX(1);
+    transition: all 0.5s linear ;
+}
+
+.card-icon:hover{
+    transform: translateX(50%);
+}
+
+/* hero right */
+
+.hero-right img{
+    width: 100%;
+}
+
+/* HERO END */
+
+/* we work */
+#weWork{
+    background-color: rgba(244, 246, 252, 1);
+    padding: 8rem;
+}
+
+.weWork-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.weWork-left{
+    padding: 20px 0;
+    max-width: 90%;
+}
+
+
+.card-txt.work, .card-icon.work {
+    color: black;
+}
+
+
+.card-link.work a{
+    color: rgba(36, 5, 242, 1);
+}
+
+/* work grid */
+.weWork-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.work-grid-card{
+    margin: 20px 0;
+}
+
+.work-grid-card h1{
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.work-grid-card p{
+    opacity: 0.7;
+    margin: 10px 0;
+}
+
+/* WE WORK END */
+
+/* projects */
+#projects{
+    background-color: #fff;
+    padding: 30px 0;
+}
+
+.project-txt{
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-link.projects a, .card-icon.projects{
+    color: black;
+}
+
+.project-txt h1{
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.img-grid{
+    position: relative;
+}
+
+.img-grid:first-child{
+    grid-area: 1/1/span 2/span 2;
+}
+
+.img-grid img{
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* hover effects */
+.project-info{
+    padding: 3rem;
+    max-height: 100%;
+    height: 100%;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 20px;
+    background: linear-gradient(329.39deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.25s ease-in-out;
+}
+
+.project-info.first{
+    padding: 6rem 1rem;
+    max-width: 45%;
+    width: 100%;
+}
+
+.project-info h2{
+    font-size: 24px;
+}
+
+.project-info p{
+    opacity: 0.8;
+}
+
+.card-link.project a, .card-icon.project{
+    color: rgba(252, 217, 128, 1);
+}
+
+.project-info:hover{
+    opacity: 100%;
+}
+
