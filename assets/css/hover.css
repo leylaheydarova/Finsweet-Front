@@ -1,0 +1,43 @@
+/* focus */
+.header-menu-item a:focus{
+    color: var(--white-color);
+}
+
+/* hover */
+/* header */
+.header-menu-item a:hover{
+    text-decoration: underline;
+}
+
+.contact-btn:hover{
+    background-color: rgba(244, 246, 252, 0.2);
+    border-color: transparent;
+}
+/* right-arrows */
+.card-icon:hover{
+    transform: translateX(50%);
+}
+
+/* gold buttons */
+.card-btn a:hover, .card-btn input:hover{
+    border: 1px solid var(--gold-color);
+    background-color: rgba(252, 217, 128, 0.4);
+    color: var(--gold-color);
+}
+
+/* projects */
+.project-info:hover{
+    opacity: 100%;
+} 
+
+/* card scale */
+.card-hover:hover{
+    box-shadow: 20px 20px 10px rgba(28, 30, 83, 0.42);
+    transform: scale(1.1);
+}
+
+/* turn comments */
+.comment-icons i:hover{
+    background-color: rgba(82, 57, 250, 1);
+    color: white;
+}

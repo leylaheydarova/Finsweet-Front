@@ -21,18 +21,15 @@
     .hero-box{
         flex-direction: column;
     }
-    .hero-left{
+    .hero-left, .hero-right, .card-txt{
         max-width: 100%
-    }
-    .hero-right{
-        max-width: 100%;
     }
     .card-links{
         flex-direction: column;
         gap: 30px;
     }
-    .card-txt{
-        max-width: 100%;
+    .card-links a, .card-icon i{
+        margin: 10px 0;
     }
 }
 
@@ -54,7 +51,7 @@
 
 @media ( max-width: 576px ){
     .container{
-        max-width: 98%;
+        max-width: 100%;
     }
 
     #header-menu{
@@ -65,12 +62,24 @@
         font-size: 30px;
     }
 
-    .weWork-left{
-        justify-content: center;
+    .project-txt, .comments-box, .questions-box{
+        flex-direction: column;
     }
 
-    .weWork-grid{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr)
+    .features p{
+        max-width: 100%;
+        width: 100%;
     }
+
+    .features-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+
+    /* .features-grid{
+        [class*="grid-"] {
+            width: 100%;
+          } 
+    }*/
 }
