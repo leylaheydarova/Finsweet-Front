@@ -563,14 +563,18 @@ td{
 
 .inquiry-form{
     margin: 20px 10px;
+    max-width: 97%;
+    width: 100%;
 }
 form{
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
 }
 input{
+    width: 100%;
     padding: 20px 25px;
     background-color: var(--primary-color);
     border: 1px solid rgba(255, 255, 255, 0.05);
@@ -599,7 +603,7 @@ input{
     color: var(--dark-blue);
 }
 
-.-blog-cards{
+.blog-cards{
     margin: 40px 0;
     display: flex;
     gap: 30px;
@@ -641,6 +645,7 @@ input{
 
 .contact-box{
     display: flex;
+    gap: 13rem;
 }
 
 .contact-left{
@@ -670,6 +675,29 @@ input{
     font-weight: 500;
 }
 
-.contact-info p{
+.contact-info p, .contact-right p{
     opacity: 0.8;
+}
+
+.contact-right{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.contact-right h2{
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.contact-right p{
+    max-width: 61%;
+    width: 100%;
+    line-height: 28px;
+}
+
+.icons{
+    display: flex;
+    gap: 25px;
 }
