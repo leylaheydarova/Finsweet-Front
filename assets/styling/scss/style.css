@@ -364,4 +364,25 @@ h5 {
 .icons {
   display: flex;
   gap: 25px;
+}
+
+#footer {
+  background-color: var(--white-color);
+}
+
+.footer-box {
+  padding: 32px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-right ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.footer-left h2, .footer-right li {
+  font-weight: 500;
+}
+.footer-left h2 {
+  font-size: 16px;
 }/*# sourceMappingURL=style.css.map */
