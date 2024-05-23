@@ -1,0 +1,26 @@
+@use "../utilities/variables" as *;
+
+//styling
+#mission{
+    background-color: $bluegrey-color;
+    padding: 5rem 0;
+}
+
+.mission{
+    &-box{
+        display: flex;
+        flex-direction: column;
+        gap: 6rem;
+    }
+
+    &-row{
+        display: flex;
+        gap: 9rem;
+
+        &-card{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+    }
+}

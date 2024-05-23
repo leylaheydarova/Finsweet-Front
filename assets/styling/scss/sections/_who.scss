@@ -1,0 +1,19 @@
+@use "../utilities/variables" as *;
+//Styling
+#who{
+    background-color: $lightgrey-color;
+    
+}
+
+.who{
+    &-box{
+        padding: 80px 79px 80px 109px;
+    }
+
+    &-texts{
+        display: flex;
+        justify-content: space-between;
+        gap: 61px;
+    }
+
+}

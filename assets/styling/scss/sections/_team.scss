@@ -1,0 +1,59 @@
+@use "../utilities/variables" as *;
+
+//styling
+#team{
+    background-color: $grey-color;
+    padding: 5rem 0;
+}
+
+.team{
+    &-box{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+
+        h3{
+            margin: 48px 0;
+            text-align: center;
+        }
+    }
+
+    &-cards{
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+    }
+
+    &-card{
+        max-width: 250px;
+        width: 100%;
+        height: 300px;
+        background-color: $white-color;
+        transform: scale(1);
+        box-shadow: 0 0 7px rgba(28, 30, 83, 0.42);
+
+        &-img{
+            padding: 10px;
+            border-radius: 50%;
+            
+            img{
+                width: 100%;
+                object-fit: cover;
+                overflow: hidden;
+            }
+        }
+
+    }
+    &-txt{
+       padding: 10px;
+        text-align: center;
+    }
+
+}
+
+
+//hover
+.team-card:hover{
+    box-shadow: 0 0 14px rgba(28, 30, 83, 0.42);
+    transform: scale(1.1);
+}

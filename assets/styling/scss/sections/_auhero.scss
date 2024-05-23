@@ -1,0 +1,41 @@
+@use "../utilities/variables" as *;
+#au-hero{
+    background-color: $white-color;
+    padding: 5rem 0;
+}
+
+.au-hero{
+    &-box{
+        margin: 20px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-left{
+        max-width: 38%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h2{
+            font-size: 18px;
+            line-height: 32px;
+        }
+
+        p{
+            text-align: justify;
+        }
+    }
+
+    &-right{
+        max-width: 45%;
+        width: 100%;
+
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+}

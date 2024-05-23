@@ -1,5 +1,7 @@
+@use "./variables" as *;
+
 .container{
-    max-width: 90%;
+    max-width: 1280px;
     width: 100%;
     margin: 0 auto;
 }

@@ -1,0 +1,15 @@
+@use "../utilities/variables" as *;
+
+//styling
+.contact-btn{
+    padding: 10px 30px;
+    border: 2px solid rgba($grey-color, 0.2);
+    border-radius: 41px;
+    background-color: transparent;
+}
+
+//hover effect
+.contact-btn:hover{
+    background-color: rgba(244, 246, 252, 0.2);
+    border-color: transparent;
+}

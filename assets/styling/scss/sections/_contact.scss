@@ -1,0 +1,70 @@
+@use "../utilities/variables" as *;
+
+#contact{
+    background-color: $tintblue-color;
+    padding: 7rem 0;
+    position: relative;
+    h2{
+        color: $white-color;
+    }
+}
+
+.contact{
+    &-box{
+        display: flex;
+        gap: 13rem;
+    }
+
+    &-left{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    
+    &-info{
+        margin-top: 10px;
+        padding: 20px 40px;
+        display: flex;
+        gap: 15px;
+        background-color: $yellow-color;
+        position: absolute;
+        bottom: 0;
+        color: $darkblue-color;
+    
+        h2{
+            margin: 10px 0;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        
+        p, .contact-right p{
+            opacity: 0.8;
+        }
+    
+    }
+    &-right{
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        h2{
+            font-size: 48px;
+            font-weight: 600;
+        }
+        p{
+            color: $white-color;
+            max-width: 61%;
+            width: 100%;
+            line-height: 28px;
+        }
+    }
+}
+.logo p{
+    margin: 20px 0;
+}
+
+.icons{
+    display: flex;
+    gap: 25px;
+}

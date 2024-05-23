@@ -1,0 +1,33 @@
+@use "../utilities/variables" as *;
+
+//styling
+#benefits{
+    background-color: $white-color;
+    padding: 5rem 0;
+}
+
+.benefits{
+    &-box{
+        h3{
+            margin: 48px 0;
+            text-align: center;
+        }
+    }
+
+    &-cards{
+        display: flex;
+        justify-content: space-between;
+        gap:32px;
+    }
+
+    &-card{
+        padding: 50px 32px 48px 47px;
+        background-color: $grey-color;
+    }
+
+    &-logos{
+        margin: 48px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+}

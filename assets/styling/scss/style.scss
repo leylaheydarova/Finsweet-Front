@@ -1,7 +1,18 @@
 //Utilities
-@use "./utilities/variables";
 @use "./utilities/reset";
 @use "./utilities/container";
+@use "./utilities/variables";
+@use "./utilities/general";
 
-//Sections
+//User interface
+@use "./ui/buttons";
+
+//sections
 @use "./sections/header";
+@use "./sections/auhero";
+@use "./sections/who";
+@use "./sections/process";
+@use "./sections/mission";
+@use "./sections/benefits";
+@use "./sections/team";
+@use "./sections/contact";

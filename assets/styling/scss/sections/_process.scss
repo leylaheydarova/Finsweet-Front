@@ -1,0 +1,42 @@
+@use "../utilities/variables" as *;
+//styling
+#process{
+    background-color: $white-color;
+    padding: 5rem 0;
+}
+
+.process{
+
+    &-box{
+        h1{
+            text-align: center;
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 64px;
+        }
+    }
+
+    &-path{
+        margin-top: 48px;
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+
+        &-card{
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+
+            &-txt{
+              h2{
+                margin-bottom: 8px;
+                font-weight: 500;
+              }
+
+              p{
+                line-height: 28px;
+              }
+            }
+        }
+    }
+}

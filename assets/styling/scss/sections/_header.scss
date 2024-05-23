@@ -1,7 +1,8 @@
 @use "../utilities/variables" as *;
 
+//styling
 #header{
-    background-color: $primary-color;
+    background-color: $tintblue-color;
     }
     
     .header-box{
@@ -14,7 +15,6 @@
     
     .logo a{
         font-weight: 700;
-        color: $white-color;
     }
     
     .header-right{
@@ -32,12 +32,9 @@
     }
     
     .header-menu-item a{
-        color: rgba(187, 187, 203, 1);
+        color: $Accent-color;
     }
-    
-    .contact-btn{
-        padding: 10px 30px;
-        border: 2px solid rgba(244, 246, 252, 0.2);
-        border-radius: 41px;
-        background-color: transparent;
+
+    #header a{
+        color: $white-color;
     }
