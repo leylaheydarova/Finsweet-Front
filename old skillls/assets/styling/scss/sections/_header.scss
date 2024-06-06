@@ -38,3 +38,14 @@
     #header a{
         color: $white-color;
     }
+
+    //hover effects
+    .header-menu-item a:hover{
+        text-decoration: underline;
+    }
+    
+
+    //focus
+    .header-menu-item a:focus{
+        color: $white-color;
+    }

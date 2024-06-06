@@ -1,0 +1,82 @@
+//font weights
+.semibold-text{
+    font-weight: 500;
+}
+
+.bold-text{
+    font-weight: 600;
+}
+
+.xbold-text{
+    font-weight: 700;
+}
+
+//font-size
+@media (min-width: 580px){
+    h1{
+        font-size: 54px;
+        line-height: 74px;
+    }
+
+    h2{
+        font-size: 48px;
+        line-height: 64px;
+    }
+
+    h3{
+        font-size: 38px;
+        line-height: 56px;
+    }
+
+    h4{
+        font-size: 36px;
+        line-height: 56px;
+    }
+
+    h5{
+        font-size: 32px;
+        line-height: 48px;
+    }
+    
+    h6{
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+
+@media (max-width: 580px){
+    h1{
+        font-size: 40px;
+        line-height: 52px;
+    }
+
+    h2{
+        font-size: 32px;
+        line-height: 44px;
+    }
+
+    h3{
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    h4{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    h5{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    h6{
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+
+//font-opacity
+p{
+    opacity: 0.7;
+}

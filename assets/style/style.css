@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 90%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (max-width: 940px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (max-width: 580px) {
+  .container {
+    max-width: 100%;
+  }
+}
+.semibold-text {
+  font-weight: 500;
+}
+
+.bold-text {
+  font-weight: 600;
+}
+
+.xbold-text {
+  font-weight: 700;
+}
+
+@media (min-width: 580px) {
+  h1 {
+    font-size: 54px;
+    line-height: 74px;
+  }
+  h2 {
+    font-size: 48px;
+    line-height: 64px;
+  }
+  h3 {
+    font-size: 38px;
+    line-height: 56px;
+  }
+  h4 {
+    font-size: 36px;
+    line-height: 56px;
+  }
+  h5 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  h6 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+@media (max-width: 580px) {
+  h1 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+  h2 {
+    font-size: 32px;
+    line-height: 44px;
+  }
+  h3 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  h4 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  h5 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  h6 {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+p {
+  opacity: 0.7;
+}
+
+.button {
+  border: 2px solid transparent;
+  border-radius: 40px;
+}
+
+.isPrimary {
+  padding: 18px 48px;
+}
+
+.isLarge {
+  padding: 20px 48px;
+}
+
+.isSmall {
+  padding: 12px 20px;
+}
+
+.yellowbtn {
+  background-color: #FCD980;
+}
+
+.darkbluebtn {
+  background-color: #282938;
+}
+.darkbluebtn a {
+  color: #fff;
+}
+
+.textbtn {
+  background-color: transparent;
+}
+.textbtn a {
+  color: #000;
+}
+
+.yellowbtn:hover {
+  border: 2px solid #FCD980;
+  background-color: rgba(252, 217, 128, 0.4);
+  color: #FCD980;
+}
+
+.darkbluebtn:hover {
+  border: 2px solid #282938;
+  background-color: rgba(40, 41, 56, 0.4);
+}
+
+.textbtn:hover a {
+  color: #F4F6FC;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,29 @@
+.container{
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (min-width: 1400px){
+    .container{
+        max-width: 1280px;
+    }
+}
+
+@media (max-width: 1280px){
+    .container{
+        max-width: 1024px;
+    }
+}
+
+@media (max-width: 940px){
+    .container{
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 580px){
+    .container{
+        max-width: 100%;
+    }
+}

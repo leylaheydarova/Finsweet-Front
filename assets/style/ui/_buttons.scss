@@ -1,0 +1,59 @@
+@use '../utilities/variables' as *;
+
+//STYLE
+.button{
+    border: 2px solid transparent;
+    border-radius: 40px;
+}
+
+//button sizes
+.isPrimary{
+    padding: 18px 48px;
+}
+
+.isLarge{
+    padding: 20px 48px;
+}
+
+.isSmall{
+    padding: 12px 20px;
+}
+
+//button colors
+.yellowbtn{
+    background-color: $yellow-color;
+}
+
+.darkbluebtn{
+    background-color: $darkblue-color;
+    a{
+        color: $white-color;
+    }
+}
+
+.textbtn{
+    background-color: transparent;
+    a{
+        color: $black-color;
+    }
+}
+
+
+
+//HOVER EFFECTS
+.yellowbtn:hover{
+    border: 2px solid $yellow-color;
+    background-color: rgba($color: $yellow-color, $alpha: 0.4);
+    color: $yellow-color;
+}
+
+.darkbluebtn:hover{
+    border: 2px solid $darkblue-color;
+    background-color: rgba($color: $darkblue-color, $alpha: 0.4);
+}
+
+.textbtn:hover{
+    a{
+        color: $grey-color;
+    }
+}

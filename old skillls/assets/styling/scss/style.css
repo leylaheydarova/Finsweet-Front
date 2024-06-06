@@ -112,6 +112,14 @@ h5 {
   color: #fff;
 }
 
+.header-menu-item a:hover {
+  text-decoration: underline;
+}
+
+.header-menu-item a:focus {
+  color: #fff;
+}
+
 #au-hero {
   background-color: #fff;
   padding: 5rem 0;
