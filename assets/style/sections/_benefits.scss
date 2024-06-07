@@ -1,0 +1,57 @@
+@use '../utilities/variables' as *;
+
+//styling
+#benefits{
+    padding-bottom: 30px;
+}
+
+.benefits{
+    &-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+
+        h2{
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    &-cards{
+        display: flex;
+        gap: 32px;
+        transform: scale(1);
+    }
+
+    &-card{
+        padding: 50px 32px 48px 47px;
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+
+        img{
+            width: 24px;
+        }
+
+        &-txt{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+    }
+}
+
+//hover effects
+.benefits-card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba($color: $grey-color, $alpha: 1);
+}
+
+//responsive view
+@media (max-width: 962px){
+    .benefits-cards{
+        flex-wrap: wrap;
+    }
+}

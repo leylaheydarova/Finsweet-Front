@@ -1,0 +1,23 @@
+@use '../utilities/variables' as *;
+
+//styling
+#supporters{
+    padding: 5rem 0;
+}
+
+.supporters{
+    &-box{
+        margin: 4rem 0;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+//responsive view
+@media (max-width: 980px){
+    .supporters-box{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+}
