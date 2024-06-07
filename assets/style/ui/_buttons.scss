@@ -31,6 +31,14 @@
     }
 }
 
+.contactbtn{
+    background-color: transparent;
+    border: 2px solid rgba($color: $white-color, $alpha: 0.4);
+    a{
+        color: $white-color;        
+    }
+}
+
 .textbtn{
     background-color: transparent;
     a{
@@ -44,12 +52,19 @@
 .yellowbtn:hover{
     border: 2px solid $yellow-color;
     background-color: rgba($color: $yellow-color, $alpha: 0.4);
-    color: $yellow-color;
+    a{
+        color: $yellow-color;
+    }
 }
 
 .darkbluebtn:hover{
     border: 2px solid $darkblue-color;
     background-color: rgba($color: $darkblue-color, $alpha: 0.4);
+}
+
+.contactbtn:hover{
+    background-color: rgba($color: rgba($color: $white-color, $alpha: 0.4), $alpha: 0.2);
+    border-color: transparent;
 }
 
 .textbtn:hover{

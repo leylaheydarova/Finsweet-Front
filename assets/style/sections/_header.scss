@@ -1,3 +1,59 @@
-@use '../utilities/variables';
+@use '../utilities/variables' as *;
 
-//style
+//styling
+#header{
+    padding: 16px 0;
+    background-color: $tintblue-color;
+}
+
+.header{
+    &-box{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-logo{
+        margin: 33px 0;
+    }
+
+    &-right{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 32px;
+    }
+
+    &-menu{
+        &-list{
+            display: flex;
+            gap: 32px;
+            a{
+                color: $accent-color;
+            }
+        }
+    }
+}
+
+//Hover effects
+.header-menu-item a:hover{
+    text-decoration: underline;
+}
+
+//responsive view
+
+@media (max-width: 962px){
+    .header{
+        &-menu-list{
+            flex-direction: column;
+        }
+    }
+    
+}
+
+@media (max-width: 580px){
+    .header{
+        &-menu{
+            display: none;
+        }
+    }
+}
