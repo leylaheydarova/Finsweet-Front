@@ -44,6 +44,10 @@
         font-size: 24px;
         line-height: 36px;
     }
+
+    p{
+        line-height: 28px;
+    }
 }
 
 @media (max-width: 580px){
@@ -100,6 +104,7 @@ p{
     color: $darkblue-color;
 }
 
+
 //backgrounds
 .blue-background{
     background-color: $tintblue-color;
@@ -112,3 +117,8 @@ p{
 .grey-background{
     background-color: $grey-color;
 }
+
+.yellow-background{
+    background-color: rgba($color: $yellow-color, $alpha: 0.1);
+}
+

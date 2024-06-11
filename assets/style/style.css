@@ -78,6 +78,9 @@ li {
     font-size: 24px;
     line-height: 36px;
   }
+  p {
+    line-height: 28px;
+  }
 }
 @media (max-width: 580px) {
   h1 {
@@ -135,6 +138,10 @@ p {
 
 .grey-background {
   background-color: #F4F6FC;
+}
+
+.yellow-background {
+  background-color: rgba(252, 217, 128, 0.1);
 }
 
 .button {
@@ -347,5 +354,75 @@ p {
 @media (max-width: 962px) {
   .benefits-cards {
     flex-wrap: wrap;
+  }
+}
+#client, #support {
+  padding: 5rem 0;
+}
+
+.client-box, .support-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+.client-left, .support-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 45%;
+}
+.client-left h6, .support-left h6 {
+  font-size: 18px;
+  line-height: 32px;
+}
+.client-right img, .support-right img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 962px) {
+  .client-box, .support-box {
+    flex-direction: column-reverse;
+  }
+  .client-left, .support-left {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+}
+#revision, #delivery {
+  padding: 5rem 0;
+}
+
+.revision-box, .delivery-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+.revision-right, .delivery-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 45%;
+}
+.revision-right h6, .delivery-right h6 {
+  font-size: 18px;
+  line-height: 32px;
+}
+.revision-left img, .delivery-left img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 962px) {
+  .revision-box, .delivery-box {
+    flex-direction: column;
+  }
+  .revision-right, .delivery-right {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
