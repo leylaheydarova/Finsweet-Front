@@ -1,0 +1,50 @@
+@use '../utilities/variables' as *;
+
+//styling
+#questions{
+    padding: 5rem 0;
+}
+
+.questions{
+    &-box{
+        display: flex;
+        gap: 7rem;
+    }
+
+    &-left, &-right{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &-left{
+        gap: 1rem;
+    }
+
+    &-right{
+        // gap: 30px;
+       
+    }
+
+
+    &-sentences{
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        padding: 32px 0;
+        border-bottom: 2px solid $grey-color;
+
+        &:nth-child(5){
+            border-bottom: none;
+        }
+    }
+
+
+}
+
+
+@media (max-width: 780px){
+    .questions-box{
+        flex-direction: column;
+    }
+}
+

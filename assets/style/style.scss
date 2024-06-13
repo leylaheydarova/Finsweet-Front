@@ -8,9 +8,20 @@
 @use './ui/buttons';
 
 //sections
+//general
 @use './sections/header';
+@use './sections/footer';
+
+//features
 @use './sections/f-hero';
 @use './sections/supporters';
 @use './sections/benefits';
 @use './sections/client';
 @use './sections/revision';
+@use './sections/question';
+
+
+//work
+@use './sections/portfolio';
+@use './sections/templates';
+@use './sections/build';
