@@ -3,25 +3,30 @@
 @use './utilities/container';
 @use './utilities/generalstyle';
 @use './utilities/variables';
+@use './utilities/display';
 
 //user interface
 @use './ui/buttons';
+@use './ui/objectstyling';
 
 //sections
 //general
 @use './sections/header';
 @use './sections/footer';
+@use './sections/build'; //work, readCaseStudies
+@use './sections/benefits'; //index, feature
+@use './sections/supporters'; //index, feature
+@use './sections/question'; //index, feature
 
-//features
+//feature
 @use './sections/f-hero';
-@use './sections/supporters';
-@use './sections/benefits';
 @use './sections/client';
 @use './sections/revision';
-@use './sections/question';
 
 
 //work
 @use './sections/portfolio';
 @use './sections/templates';
-@use './sections/build';
+
+//read case studies
+@use './sections/design';

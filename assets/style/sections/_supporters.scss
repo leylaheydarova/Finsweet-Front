@@ -1,14 +1,9 @@
 @use '../utilities/variables' as *;
 
 //styling
-#supporters{
-    padding: 5rem 0;
-}
-
 .supporters{
-    &-box{
+    &-box.flexrow{
         margin: 4rem 0;
-        display: flex;
         justify-content: space-between;
     }
 }

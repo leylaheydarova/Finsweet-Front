@@ -6,9 +6,7 @@
 }
 
 .benefits{
-    &-box{
-        display: flex;
-        flex-direction: column;
+    &-box.flexcolumn{
         align-items: center;
         gap: 48px;
 
@@ -19,25 +17,22 @@
         }
     }
 
-    &-cards{
-        display: flex;
+    &-cards.flexrow{
         gap: 32px;
         transform: scale(1);
     }
 
     &-card{
-        padding: 50px 32px 48px 47px;
-        display: flex;
-        flex-direction: column;
-        gap: 26px;
+        &.flexcolumn{
+            padding: 50px 32px 48px 47px;
+            gap: 26px;
+        }
 
         img{
             width: 24px;
         }
 
-        &-txt{
-            display: flex;
-            flex-direction: column;
+        &-txt.flexcolumn{
             gap: 12px;
         }
     }
@@ -52,7 +47,7 @@
 
 //responsive view
 @media (max-width: 962px){
-    .benefits-cards{
+    .benefits-cards.flexrow{
         flex-wrap: wrap;
     }
 }

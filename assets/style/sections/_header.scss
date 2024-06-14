@@ -2,12 +2,11 @@
 
 //styling
 #header{
-    padding: 16px 0;
+    padding: 1rem 0;
 }
 
 .header{
-    &-box{
-        display: flex;
+    &-box.flexrow{
         justify-content: space-between;
     }
 
@@ -15,19 +14,18 @@
         margin: 33px 0;
     }
 
-    &-right{
-        display: flex;
+    &-right.flexrow{
         justify-content: space-between;
         align-items: center;
         gap: 32px;
     }
 
     &-menu{
-        &-list{
-            display: flex;
+        &-list.flexrow{
             gap: 32px;
             a{
                 color: $accent-color;
+                padding-bottom: 16px;
             }
         }
     }
@@ -35,14 +33,13 @@
 
 //Hover effects
 .header-menu-item a:hover{
-    text-decoration: underline;
+    border-bottom: 2px solid $accent-color;
 }
 
 //responsive view
-
 @media (max-width: 962px){
     .header{
-        &-menu-list{
+        &-menu-list.flexrow{
             flex-direction: column;
         }
     }

@@ -1,20 +1,13 @@
 @use '../utilities/variables' as *;
 
 //styling
-#revision, #delivery{
-    padding: 5rem 0;
-}
-
 .revision, .delivery{
-    &-box{
-        display: flex;
+    &-box.flexrow{
         justify-content: space-between;
         gap: 5rem;
     }
 
-    &-right{
-        display: flex;
-        flex-direction: column;
+    &-right.flexcolumn{
         gap: 1rem;
         max-width: 45%;
 
@@ -22,13 +15,6 @@
             font-size: 18px;
             line-height: 32px;
         }
-    }
-
-    &-left{
-        img{
-            width: 100%;
-            object-fit: cover
-        };
     }
 }
 

@@ -1,0 +1,18 @@
+@use '../utilities/variables' as *;
+
+//padding
+.primarySectionPadding{
+    padding: 5rem 0;
+}
+
+//image fit
+.fitImage{
+    img{
+        width: 100%;
+        object-fit: cover;
+    };
+}
+
+.underline-grey{
+    border-bottom: 2px solid $grey-color;
+}

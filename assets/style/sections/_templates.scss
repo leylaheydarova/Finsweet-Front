@@ -1,20 +1,13 @@
 @use '../utilities/variables' as *;
 
 //styling
-#templates{
-    padding: 5rem;
-}
-
 .templates{
-    &-box{
-        display: flex;
-        flex-direction: column;
+    &-box.flexcolumn{
         gap: 48px;
         align-items: center;
     }
 
-    &-menu-list{
-        display: flex;
+    &-menu-list.flexrow{
         gap: 32px;
     }
 
@@ -25,20 +18,8 @@
     }
 
     &-card{
-        display: flex;
-        flex-direction: column;
-
-        &-img{
-            img{
-                width: 100%;
-                object-fit: cover;
-            }
-        }
-
-        &-txt{
+        &-txt.flexcolumn{
             margin: 20px 0;
-            display: flex;
-            flex-direction: column;
             gap: 12px;
 
         }

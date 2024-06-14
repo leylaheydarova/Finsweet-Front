@@ -1,37 +1,25 @@
 @use '../utilities/variables' as *;
 
 //styling
-#questions{
-    padding: 5rem 0;
-}
-
 .questions{
-    &-box{
-        display: flex;
+    &-box.flexrow{
         gap: 7rem;
     }
 
-    &-left, &-right{
-        display: flex;
-        flex-direction: column;
-    }
     
-    &-left{
+    &-left.flexcolumn{
         gap: 1rem;
     }
 
-    &-right{
-        // gap: 30px;
-       
-    }
-
-
     &-sentences{
-        display: flex;
-        justify-content: space-between;
-        gap: 30px;
         padding: 32px 0;
         border-bottom: 2px solid $grey-color;
+       
+        &.flexrow{
+            justify-content: space-between;
+            gap: 30px;
+       }
+
 
         &:nth-child(5){
             border-bottom: none;
@@ -43,7 +31,7 @@
 
 
 @media (max-width: 780px){
-    .questions-box{
+    .questions-box.flexrow{
         flex-direction: column;
     }
 }

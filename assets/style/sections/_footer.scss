@@ -7,21 +7,17 @@
 }
 
 .contact{
-    &-box{
-        display: flex;
+    &-box.flexrow{
         gap: 13rem;
     }
 
-    &-left{
-        display: flex;
-        flex-direction: column;
+    &-left,.flexcolumn{
         gap: 20px;
     }
 
-    &-info{
+    &-info.flexrow{
         margin-top: 10px;
         padding: 20px 40px;
-        display: flex;
         gap: 15px;
         position: absolute;
         bottom: 0;
@@ -31,10 +27,8 @@
         }
     }
 
-    &-right{
+    &-right,.flexcolumn{
         padding-left: 20px;
-        display: flex;
-        flex-direction: column;
         gap: 32px;
 
         p{
@@ -48,27 +42,20 @@
 }
 
 
-.icons{
-    display: flex;
+.icons,.flexrow{
     gap: 25px;
 }
 /* END CONTACT */
 
 /* footer */
-#footer{
-    background-color: var(--white-color);
-}
-
 .footer{
-    &-box{
+    &-box.flexrow{
     padding: 32px 0;
-    display: flex;
     justify-content: space-between;
     }
 
     &-right {
-        ul{
-            display: flex;
+        ul.flexrow{
             justify-content: space-between;
             gap: 20px;
         }
@@ -78,7 +65,7 @@
 
 //responsive view
 @media (max-width: 780px){
-    .contact-box{
+    .contact-box.flexrow{
         flex-direction: column;
         padding-bottom: 50px;
     }

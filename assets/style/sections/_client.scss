@@ -1,20 +1,13 @@
 @use '../utilities/variables' as *;
 
 //styling
-#client, #support{
-    padding: 5rem 0;
-}
-
 .client, .support{
-    &-box{
-        display: flex;
+    &-box.flexrow{
         justify-content: space-between;
         gap: 5rem;
     }
 
-    &-left{
-        display: flex;
-        flex-direction: column;
+    &-left.flexcolumn{
         gap: 1rem;
         max-width: 45%;
 
@@ -23,23 +16,16 @@
             line-height: 32px;
         }
     }
-
-    &-right{
-        img{
-            width: 100%;
-            object-fit: cover
-        };
-    }
 }
 
 
 //responsive view
 @media (max-width: 962px){
     .client, .support{
-        &-box{
+        &-box.flexrow{
             flex-direction: column-reverse;
         }
-        &-left{
+        &-left.flexcolumn{
             max-width: 100%;
             align-items: center;
             text-align: center;
