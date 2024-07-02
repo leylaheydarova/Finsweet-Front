@@ -39,11 +39,14 @@
 }
 
 //hover effects
-.benefits-card:hover{
-    transform: scale(1.1);
-    box-shadow: 0 0 10px rgba($color: $grey-color, $alpha: 1);
+
+.benefits-card{
+    transition: opacity 0.6s ease;
 }
 
+.benefits-cards:hover > :not(:hover){
+    opacity: 0.4;
+}
 
 //responsive view
 @media (max-width: 962px){

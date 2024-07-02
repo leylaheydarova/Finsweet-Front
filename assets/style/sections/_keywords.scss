@@ -1,0 +1,21 @@
+@use '../utilities/variables' as *;
+
+//styling
+.keywords{
+    &-box.flexrow{
+        justify-content: center;
+        border-bottom: 1px solid rgba($color: $darkblue-color, $alpha: 0.3);
+        border-top: 1px solid rgba($color: $darkblue-color, $alpha: 0.3);
+        padding: 24px 0;
+    }
+
+    &-item:first-child{
+        font-size: 24px;
+        line-height: 36px;
+        color: $royalblue-color;
+    }
+    &-item{
+        font-size: 18px;
+        line-height: 32px;
+    }
+}
