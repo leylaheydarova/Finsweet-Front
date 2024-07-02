@@ -65,6 +65,10 @@ p {
   opacity: 0.8;
 }
 
+.opacity_89 {
+  opacity: 89%;
+}
+
 .full_opacity {
   opacity: 1;
 }
@@ -212,6 +216,13 @@ p {
   color: #000;
 }
 
+.readmore {
+  background-color: transparent;
+}
+.readmore a {
+  color: #2405F2;
+}
+
 .yellowbtn:hover {
   border: 2px solid #FCD980;
   background-color: rgba(252, 217, 128, 0.4);
@@ -232,6 +243,10 @@ p {
 
 .textbtn:hover a {
   color: #F4F6FC;
+}
+
+.readmore:visited a {
+  color: purple;
 }
 
 .primarySectionPadding {
@@ -622,4 +637,19 @@ p {
 .keywords-item {
   font-size: 18px;
   line-height: 32px;
+}
+
+.uxcase-top.flexcolumn {
+  align-items: center;
+  text-align: center;
+  max-width: 920px;
+  width: 100%;
+  margin: 0 auto;
+}
+.uxcase-img-bg {
+  margin: 40px 0;
+  background-image: url("../../images/uxcase.png");
+  background-repeat: repeat;
+  background-size: cover;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

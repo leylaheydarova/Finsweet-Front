@@ -46,6 +46,13 @@
     }
 }
 
+.readmore{
+    background-color: transparent;
+    a{
+        color: $royalblue-color;
+    }
+}
+
 
 
 //HOVER EFFECTS
@@ -70,5 +77,11 @@
 .textbtn:hover{
     a{
         color: $grey-color;
+    }
+}
+
+.readmore:visited{
+    a{
+        color: purple;
     }
 }

@@ -1,0 +1,19 @@
+@use '../utilities/variables' as *;
+
+//styling
+.uxcase{
+    &-top.flexcolumn{
+        align-items: center;
+        text-align: center;
+        max-width: 920px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &-img-bg{
+        margin: 40px 0;
+        background-image: url('../../images/uxcase.png');
+        background-repeat: repeat;
+        background-size: cover;
+    }
+}
